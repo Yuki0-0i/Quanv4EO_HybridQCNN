@@ -1,0 +1,52 @@
+# ============================================================
+# 忽略文件类型 (大文件, 数据, 缓存)
+# ============================================================
+*.npy
+*.pt
+*.pth
+*.npz
+*.log
+*.tmp
+
+# pycache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# venv
+venv/
+.venv/
+env/
+.env
+
+# 数据集
+datasets/
+
+# 模型 checkpoint
+checkpoints/
+*.ckpt
+*.h5
+*.hdf5
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# 报告输出
+__pycache__/
+*.py.bak
+
+# 量子电路缓存
+qml_cache/
+pennylane_cache/
+lightning_logs/

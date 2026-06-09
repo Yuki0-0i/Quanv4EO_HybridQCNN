@@ -1,0 +1,41 @@
+# ============================================================
+# Quanv4EO 混合量子-经典 CNN 环境依赖
+# ============================================================
+# Conda
+python=3.10
+
+# PyTorch (CUDA 13.0 匹配 RTX 5090)
+torch==2.11.0
+torchvision==0.26.0
+torchaudio==2.11.0
+
+# PennyLane + Lightning (CPU C++ 后端 lightning.qubit)
+pennylane==0.42.3
+pennylane-lightning==0.42.0
+pennylane-lightning-gpu==0.42.0
+custatevec-cu12
+
+# 关键修复 (Windows 踩过的坑)
+# PennyLane 0.42 实际可跑 numpy 2.x, 但保持 < 2.0 兼容性更好
+numpy<2.0
+autoray==0.6.11
+
+# 数据处理
+scikit-learn
+opencv-python
+rasterio
+tqdm
+pandas
+matplotlib
+pillow
+
+# GPU 监控
+pynvml
+
+# 报告
+python-docx
+pymupdf
+
+# Jupyter
+jupyter
+notebook
