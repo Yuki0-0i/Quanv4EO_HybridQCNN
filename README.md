@@ -2,6 +2,11 @@
 
 > 基于 Quanv4EO (TGRS 2025) 的混合量子-经典遥感图像分类模型现代化重构与改进
 
+[![CI](https://github.com/Yuki0-0i/Quanv4EO_HybridQCNN/actions/workflows/ci.yml/badge.svg)](https://github.com/Yuki0-0i/Quanv4EO_HybridQCNN/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![PennyLane 0.42](https://img.shields.io/badge/PennyLane-0.42-purple.svg)](https://pennylane.ai/)
+
 ## 项目简介
 
 本项目以 Quanv4EO 量子卷积神经网络为基础，将其从 2020 年的旧依赖（JAX 0.2 + PennyLane 0.14）现代化重写为现代 PennyLane 0.42 + PyTorch 2.11 架构，并系统化探索量子参数 / 经典后端 / 特征融合的贡献。
